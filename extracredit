@@ -1,0 +1,3 @@
+const p1Spawn = this.map.findObject("Objects", obj => obj.name === "SpawnPoint")
+my.sprite.player = this.physics.add.sprite(p1Spawn.x, p1Spawn.y, "platformer_characters", "tile_0000.png").setScale(SCALE)
+my.sprite.player.setCollideWorldBounds(true)
